@@ -29,5 +29,7 @@ warning: not easy). You may want to read up on: Divide and Conquer.
 */
 
 function maxProfit(arr){
-
+  return arr;
 }
+
+module.exports = maxProfit;
