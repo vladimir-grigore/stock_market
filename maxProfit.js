@@ -28,8 +28,28 @@ Try to come up with a non-brute-force solution (
 warning: not easy). You may want to read up on: Divide and Conquer.
 */
 
+
 function maxProfit(arr){
-  return arr;
+  //store all profit possibilities in an array
+  var profits = [];
+
+  var compareNum = function(index, arr){
+    var num = arr[index];
+    var max_profit = 0;
+
+    //start from the requested index and get profits
+    for (index; index < arr.length; index++){
+      if(num < arr[index]){
+        profits.push(arr[index] - num);
+      }
+    }
+  }
+
+  for (var i = 0; i < arr.length; i++){
+    compareNum(i, arr);
+  }
+
+  return Math.max.apply(null, profits);
 }
 
 module.exports = maxProfit;

@@ -1,0 +1,25 @@
+{
+  "name": "stock_market",
+  "version": "1.0.0",
+  "description": "",
+  "main": "maxProfit.js",
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimir-grigore/stock_market.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimir-grigore/stock_market/issues"
+  },
+  "homepage": "https://github.com/vladimir-grigore/stock_market#readme"
+}
